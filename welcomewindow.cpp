@@ -13,8 +13,7 @@ WelcomeWindow::WelcomeWindow(QString username, int age, QWidget *parent)
     QPixmap pix ("C:/Users/Nour/Desktop/Cinema_Booking/AUC.jpg");
     ui->theaterimage->setPixmap(pix.scaled(500,500));
     QString str=QString::number(age);
-    ui->namelabel->setText(username);
-    ui->agelabel->setText(str);
+    ui->namelabel->setText(username+" "+str);
 
 }
 

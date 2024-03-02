@@ -23,15 +23,15 @@
     </rect>
    </property>
    <property name="text">
-    <string>Hello</string>
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="namelabel">
    <property name="geometry">
     <rect>
-     <x>50</x>
+     <x>40</x>
      <y>30</y>
-     <width>63</width>
+     <width>81</width>
      <height>20</height>
     </rect>
    </property>
@@ -65,17 +65,17 @@
     <string>Logout</string>
    </property>
   </widget>
-  <widget class="QLabel" name="agelabel">
+  <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>10</x>
      <y>30</y>
      <width>63</width>
      <height>20</height>
     </rect>
    </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string>Hello</string>
    </property>
   </widget>
  </widget>

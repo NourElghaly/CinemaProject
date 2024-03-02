@@ -273,7 +273,7 @@
      <string>User</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="adminradio_2">
+   <widget class="QRadioButton" name="adminradio">
     <property name="geometry">
      <rect>
       <x>10</x>
