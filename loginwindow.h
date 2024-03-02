@@ -20,6 +20,11 @@ public:
 private slots:
     void on_pushButtonLogin_clicked();
 
+<<<<<<< HEAD
+=======
+    void on_pushButtonRegister_clicked();
+
+>>>>>>> origin/CinemaProject
 private:
     Ui::Loginwindow *ui;
 };
