@@ -3,8 +3,7 @@
 #include "welcomewindow.h"
 #include "registerwindow.h"
 #include "Users.h"
-
-
+#include <QString>
 
 Loginwindow::Loginwindow(QWidget *parent)
     : QMainWindow(parent)
@@ -27,18 +26,20 @@ void Loginwindow::on_pushButtonLogin_clicked()
     name=ui->lineEditUsername->text();
     password=ui->lineEditPassword->text();
     bool isValid=false;
+    int usernumber;
 
     for (int i=0; i<100; i++){
         if (name == usernames[i] && password == passwords [i])
          {
             isValid = true;
+            usernumber=i;
             break;
          }
     }
 
     if(isValid){
         hide();
-        WelcomeWindow* welcomewindow = new WelcomeWindow(this);
+        WelcomeWindow* welcomewindow = new WelcomeWindow(usernames[usernumber],ages[usernumber],this);
         welcomewindow->show();
     }
 

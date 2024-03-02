@@ -26,10 +26,10 @@
     <string>Hello</string>
    </property>
   </widget>
-  <widget class="QLabel" name="WelcomeLabel">
+  <widget class="QLabel" name="namelabel">
    <property name="geometry">
     <rect>
-     <x>60</x>
+     <x>50</x>
      <y>30</y>
      <width>63</width>
      <height>20</height>
@@ -63,6 +63,19 @@
    </property>
    <property name="text">
     <string>Logout</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="agelabel">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>30</y>
+     <width>63</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
    </property>
   </widget>
  </widget>

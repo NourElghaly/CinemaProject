@@ -1,8 +1,10 @@
 #include "welcomewindow.h"
 #include "ui_welcomewindow.h"
+#include "loginwindow.h"
 #include <QPixmap>
 
-WelcomeWindow::WelcomeWindow(QWidget *parent)
+
+WelcomeWindow::WelcomeWindow(QString username, int age, QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::WelcomeWindow)
 {
@@ -10,6 +12,10 @@ WelcomeWindow::WelcomeWindow(QWidget *parent)
 
     QPixmap pix ("C:/Users/Nour/Desktop/Cinema_Booking/AUC.jpg");
     ui->theaterimage->setPixmap(pix.scaled(500,500));
+    QString str=QString::number(age);
+    ui->namelabel->setText(username);
+    ui->agelabel->setText(str);
+
 }
 
 WelcomeWindow::~WelcomeWindow()
@@ -17,5 +23,10 @@ WelcomeWindow::~WelcomeWindow()
     delete ui;
 }
 
-
+void WelcomeWindow::on_pushButton_clicked()
+{
+    hide();
+    Loginwindow* loginwindow=new Loginwindow(this);
+    loginwindow->show();
+}
 

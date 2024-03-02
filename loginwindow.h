@@ -1,6 +1,6 @@
 #ifndef LOGINWINDOW_H
 #define LOGINWINDOW_H
-
+#include "Users.h"
 #include <QMainWindow>
 
 
