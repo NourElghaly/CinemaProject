@@ -18,6 +18,7 @@ public:
     bool check_retype();
     bool check_date();
     bool all_check();
+    bool genere_check();
     QString name;
     QString password;
     QString retypepass;

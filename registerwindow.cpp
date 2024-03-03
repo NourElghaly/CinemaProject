@@ -16,7 +16,7 @@ RegisterWindow::RegisterWindow(QWidget *parent)
 
 bool RegisterWindow::genere_check()
 {
-    if(ui->actioncheck->isChecked()&&ui->comedycheck->isChecked()&&ui->dramacheck->isChecked()&&ui->horrorcheck->isChecked()&&ui->romancecheck->isChecked()&&ui->othercheck->isChecked())
+    if(ui->actioncheck->isChecked()||ui->comedycheck->isChecked()||ui->dramacheck->isChecked()||ui->horrorcheck->isChecked()||ui->romancecheck->isChecked()||ui->othercheck->isChecked())
               return true;
     else
         return false;
