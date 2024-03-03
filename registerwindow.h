@@ -14,7 +14,6 @@ class RegisterWindow : public QDialog
 public:
     explicit RegisterWindow(QWidget *parent = nullptr);
     ~RegisterWindow();
-    void reg();
     bool check_username();
     bool check_retype();
     bool check_date();
