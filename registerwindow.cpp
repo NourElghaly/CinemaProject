@@ -26,6 +26,9 @@ bool RegisterWindow::genere_check()
 bool RegisterWindow::check_username()
 {
     name=ui->usernameedit->text();
+    if (ui->usernameedit->text().isEmpty())
+       ui->alreadywarning->setVisible(false);
+    else
     for (int i = 0; i < 100; i++) {
         if (name == usernames[i]) {
             ui->alreadywarning->setVisible(true);
